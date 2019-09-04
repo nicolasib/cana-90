@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY();
+            transform: translateY();
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY();
+            transform: translateY();
+    opacity: 1;
+  }
+}
+
+.callAnimation {
+  -webkit-animation: fadeUp 1s;
+          animation: fadeUp 1s;
+}
+
+.byeAnimation {
+  animation: fadeUp 600ms reverse;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000a), to(#0000));
+  background: linear-gradient(#000a, #0000);
+}
+
+.bgModal {
+  height: 100vh;
+  width: 100%;
+  background-color: #0008;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bgModal #modal {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+  padding: 30px;
+}
+
+.bgModal #modal h1 {
+  font-weight: 800;
+  color: #f22;
+}
+
+.bgModal #modal p {
+  font-size: 20px;
+}
+
+.bgModal #modal button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  margin: 10px 5px;
+}
+
+.bgModal #modal .yes {
+  background-color: #007DC1;
+  color: #f5f5f5;
+}
+
+.bgModal #modal .yes:hover {
+  -webkit-box-shadow: -1px 1px 3px #0005;
+          box-shadow: -1px 1px 3px #0005;
+}
+
+.bgModal #modal .no {
+  background: none;
+  color: #252525;
+}
+
+.bgModal #modal .no:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.landingPage {
+  height: 100vh;
+  background: url("/resources/bgLanding.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingPage h1 {
+  color: #f5f5f5;
+  font-size: 30px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=home.css.map */
