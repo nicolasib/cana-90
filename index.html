@@ -9,13 +9,18 @@
 </head>
 <body>
     <nav>
-        <img src="" alt="Logo Cana 90">
-        <ul>
+        <span>Cana 90</span>
+        <span id="callMenu">☰</span>
+    </nav>
+
+    <div class="menuFullscreen hidden">
+        <span id="close">X</span>
+        <ul id="menuList">
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
-    </nav>
+    </div>
 
     <div class="bgModal hidden">
         <div id="modal" class="callAnimation">
@@ -27,8 +32,22 @@
     </div>
 
     <section class="landingPage">
-        <h1>Bem vindo!</h1>
+        <img src="resources/logoCana90.png" alt="Logo cana 90">
     </section>
+    <section class="boutSection">
+        <div class="boutHeader">
+            <h1>Cachaça artesanal</h1>
+            <div class="imgHolder"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button>ver produtos</button>
+    </section>
+    <footer>
+        <h1>Cana 90</h1>
+        <p><b>Whatsapp:</b> (37) 9 9961-1961</p>
+        <p><b>Email:</b> contato@cana90.com</p>
+        <div class="credits">By Nicolas Ibraim</div>
+    </footer>
 
     <script src="js/home.js"></script>
 </body>

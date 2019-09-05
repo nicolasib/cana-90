@@ -11,12 +11,12 @@
 
 
 // Colors 
-$green: #6CBF1E;
+$green: #6CB51E;
 $white: #f5f5f5;
 $black: #252525;
+$grey: #7B7B7B;
 
 //keyframes
-
 @keyframes fadeUp {
     from{
         transform: translateY(-100%);
@@ -57,7 +57,47 @@ nav{
     padding: 20px 30px;
     width: 100%;
    
-    background: linear-gradient(#000a, #0000);
+    span{
+        font-weight: 900;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.menuFullscreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span#close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    ul#menuList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        li{
+            padding: 20px 0;
+            font-weight: 900;
+            font-size: 20px;
+            &:hover{
+                text-decoration: underline;
+                cursor: poiner;
+            }
+        }
+    }
 }
 
 .bgModal{
@@ -137,10 +177,11 @@ ul{
     }
 }
 
+//LandingPage
 .landingPage{
     height: 100vh;
     
-    background: url('/resources/bgLanding.jpg');
+    background: url('/resources/wallpaper.jpg');
     background-size: cover;
     background-position: center;
 
@@ -150,8 +191,70 @@ ul{
 
     h1{
         color: $white;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
+    }
+
+    img{
+        width: 200px;
+    }
+}
+//Bout section
+.boutSection{
+    background-color: $white;
+    text-align: center;
+    min-height: 100vh;
+    .boutHeader{
+        padding: 0 30px;
+        background: linear-gradient($green 70%, $white 0);
+        
+        h1{
+            font-weight: 900;
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        .imgHolder{
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 2px #0003;
+        }
+        
+    }
+    p{
+        color: $grey;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    button{
+        margin: 50px 0;
+        border-radius: 4px;
+        border: none;
+        background-color: $green;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $white;
+        padding: 10px 20px;
     }
 }
 
+footer{
+    padding: 20px 30px;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+    h1{
+        font-size: 24px;
+        margin: 0 0 20px 0;
+    }
+    p{
+        margin: 5px 0;
+    }
+    div{
+        font-weight: lighter;
+        padding: 10px 0 0 0;
+        font-size: 14px;
+    }
+}
