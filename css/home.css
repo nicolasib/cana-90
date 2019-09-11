@@ -54,6 +54,27 @@ body {
   position: relative;
 }
 
+@media (min-width: 500px) {
+  nav {
+    background-color: #252525;
+    color: #f5f5f5;
+    -webkit-box-shadow: 0 2px 4px #0002;
+            box-shadow: 0 2px 4px #0002;
+  }
+  .menuList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menuList li {
+    margin: 0 10px;
+  }
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -245,8 +266,8 @@ ul li a:hover {
 
 .boutSection .boutHeader {
   padding: 0 30px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #6CB51E), color-stop(0, #f5f5f5));
-  background: linear-gradient(#6CB51E 70%, #f5f5f5 0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #6CB51E), color-stop(0, #f5f5f5));
+  background: linear-gradient(#6CB51E 50%, #f5f5f5 0);
 }
 
 .boutSection .boutHeader h1 {
@@ -301,5 +322,55 @@ footer div {
   font-weight: lighter;
   padding: 10px 0 0 0;
   font-size: 14px;
+}
+
+.desktopButton {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .boutSection h1 {
+    font-size: 30px;
+  }
+  .boutSection button {
+    display: none !important;
+  }
+  .boutHeader {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #6CB51E), color-stop(0, #f5f5f5)) !important;
+    background: linear-gradient(#6CB51E 75%, #f5f5f5 0) !important;
+  }
+  .boutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .boutContainer button {
+    display: block !important;
+    -webkit-box-shadow: 0 2px 4px #0002;
+            box-shadow: 0 2px 4px #0002;
+    cursor: pointer;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+    color: #6CB51E;
+    background-color: #fff;
+  }
+  .boutContainer button:hover {
+    -webkit-box-shadow: 0 3px 4px #0003;
+            box-shadow: 0 3px 4px #0003;
+  }
+  .boutContainer .imgHolder {
+    max-width: 400px;
+    min-height: 300px;
+  }
+  .boutContainer p {
+    color: #fff;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=home.css.map */

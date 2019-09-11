@@ -10,15 +10,18 @@
 <body>
     <nav>
         <span>Cana 90</span>
-        <span id="callMenu">☰</span>
+        <span id="callMenu" class="hamburger">☰</span>
+        <ul id="horizontalMenu">
+            <li><a href="./pages/produtos.html">Produtos</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
     </nav>
 
     <div class="menuFullscreen hidden">
         <span id="close">X</span>
         <ul id="menuList">
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="./pages/produtos.html">Produtos</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
         </ul>
     </div>
 
@@ -37,9 +40,14 @@
     <section class="boutSection">
         <div class="boutHeader">
             <h1>Cachaça artesanal</h1>
-            <div class="imgHolder"></div>
+            <div class="boutContainer">
+                <div class="imgHolder"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <button class="desktopButton">Ver produtos</button>
+                </p>
+            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <button>ver produtos</button>
     </section>
     <footer>

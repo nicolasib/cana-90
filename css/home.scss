@@ -47,6 +47,21 @@ body{
     position: relative;
 }
 
+@media (min-width: 500px){
+    nav{
+        background-color: $black;
+        color: $white;
+        box-shadow: 0 2px 4px #0002;
+    }
+    .menuList{
+        display: flex;
+        flex-direction: row;
+        li{
+            margin: 0 10px;
+        }
+    }
+}
+
 nav{
     position: absolute;
     top: 0;
@@ -206,7 +221,7 @@ ul{
     min-height: 100vh;
     .boutHeader{
         padding: 0 30px;
-        background: linear-gradient($green 70%, $white 0);
+        background: linear-gradient($green 50%, $white 0);
         
         h1{
             font-weight: 900;
@@ -256,5 +271,51 @@ footer{
         font-weight: lighter;
         padding: 10px 0 0 0;
         font-size: 14px;
+    }
+}
+
+.desktopButton{
+    display: none;
+}
+
+
+@media (min-width: 650px){
+    .boutSection{
+        h1{
+            font-size: 30px;
+        }
+        button{
+            display: none !important;
+        }
+    }
+
+    .boutHeader{
+        background: linear-gradient($green 75%, $white 0) !important;
+    }
+
+    .boutContainer{
+        display: flex;
+        flex-direction: row;
+        button{
+            display: block !important;
+            box-shadow: 0 2px 4px #0002;
+            cursor: pointer;
+            transition: ease-in-out;
+            transition-duration: 200ms;
+            color: $green;
+            background-color: #fff;
+            &:hover{
+                box-shadow: 0 3px 4px #0003;
+            }
+        }
+        
+        .imgHolder{
+            max-width: 400px;
+            min-height: 300px;
+        }
+        p{
+            color: #fff;
+            text-align: left;
+        }
     }
 }

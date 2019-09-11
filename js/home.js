@@ -32,7 +32,7 @@ noButton[0].addEventListener('click', event => {
 
 //Menu collapsado
 const menu = document.getElementsByClassName('menuFullscreen');
-const menulist = document.getElementById('menuList');
+const menuList = document.getElementById('menuList');
 const closeButton = document.getElementById('close');
 
 const callMenu = document.getElementById('callMenu');
@@ -43,7 +43,7 @@ callMenu.addEventListener('click', event => {
     closeButton.classList.remove('byeAnimation');
     menuList.classList.remove('byeAnimation');
     menu[0].classList.remove('hidden');
-    menulist.classList.add('callAnimation');
+    menuList.classList.add('callAnimation');
     closeButton.classList.add('callAnimation');
 })
 
@@ -60,3 +60,34 @@ closeButton.addEventListener('click', event => {
 
     setTimeout(()=>{ menu[0].classList.add('hidden') }, 600);
 });
+
+const hamburgerMenu = document.getElementById('callMenu');
+const horizontalMenu = document.getElementById('horizontalMenu');
+
+window.addEventListener('load', event => {
+    let windowSize = window.innerWidth;
+
+    if(windowSize >= 500){
+        //Troca a classe hidden para o hamburger
+        hamburgerMenu.classList.add('hidden');
+        horizontalMenu.classList.remove('hidden');
+    }else{
+        //Troca a classe hidden para o list
+        horizontalMenu.classList.add('hidden');
+        hamburgerMenu.classList.remove('hidden');
+    }
+});
+
+window.addEventListener('resize', () => {
+    let windowSize = window.innerWidth;
+
+    if(windowSize >= 500){
+        //Troca a classe hidden para o hamburger
+        hamburgerMenu.classList.add('hidden');
+        horizontalMenu.classList.remove('hidden');
+    }else{
+        //Troca a classe hidden para o list
+        horizontalMenu.classList.add('hidden');
+        hamburgerMenu.classList.remove('hidden');
+    }
+})
