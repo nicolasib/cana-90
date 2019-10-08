@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
   position: relative;
+  background-color: #f5f5f5;
 }
 
 .hidden {
@@ -54,18 +55,32 @@ p {
 
 .card {
   width: 100%;
-  min-height: 300px;
+  height: auto;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 2px #0002;
           box-shadow: 0 2px 2px #0002;
   margin: 30px 0;
   padding: 20px;
+  background-color: #fff;
   cursor: pointer;
 }
 
 .card .productImage {
   height: 220px;
   width: 100%;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+@media (max-width: 1280px) {
+  .card .productImage {
+    height: 150px;
+  }
+}
+
+.card .productImage img {
+  max-width: 100%;
 }
 
 .card h3 {
@@ -88,7 +103,7 @@ p {
         flex-wrap: wrap;
   }
   .cardRow .card {
-    width: 33%;
+    width: 30%;
     margin: 20px 20px 20px 0;
   }
 }

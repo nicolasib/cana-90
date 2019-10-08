@@ -69,6 +69,8 @@ nav{
     display: flex;
     justify-content: space-between;
     
+    color: $white;
+
     padding: 20px 30px;
     width: 100%;
    
@@ -196,7 +198,7 @@ ul{
 .landingPage{
     height: 100vh;
     
-    background: url('/resources/wallpaper.jpg');
+    background: url('/resources/wallpaper.jpeg');
     background-size: cover;
     background-position: center;
 
@@ -232,7 +234,9 @@ ul{
         .imgHolder{
             width: 100%;
             height: 200px;
-            background-color: #fff;
+            background: url('../resources/bebidas.jpeg');
+            background-size: contain;
+            border: 5px solid #fff;
             border-radius: 4px;
             box-shadow: 0 2px 2px #0003;
         }

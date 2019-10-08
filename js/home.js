@@ -91,3 +91,19 @@ window.addEventListener('resize', () => {
         hamburgerMenu.classList.remove('hidden');
     }
 })
+
+const produtos = document.querySelectorAll('.boutSection>button');
+const produtos1 = document.querySelectorAll('.desktopButton');
+
+produtos[0].addEventListener('click', event => {
+    event.preventDefault();
+
+    window.location.href = '/pages/produtos.html';
+});
+
+
+produtos1[0].addEventListener('click', event => {
+    event.preventDefault();
+
+    window.location.href = '/pages/produtos.html';
+})
